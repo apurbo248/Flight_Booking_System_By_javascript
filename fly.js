@@ -41,10 +41,17 @@ function getInput(inputId){
 function BookNow(){
     const input1 = getInput('inputBox1');
     const input2 = getInput('inputBox2');
-    const total = document.getElementById('total').innerText;
-    let t=input1+input2;
-    alert('********************Booked Flight Successfully********************* '+ 
-    '   Your total sit is -> '+t + '                             Total Price is -> ' + total+   "                       Wish you have a safe journey..."
+    const subTotal = document.getElementById('subtotal').innerText;
+    const vat = document.getElementById('vat').innerText ;
+    const totalPrice = document.getElementById('total').innerText;
+
+    let totalSit=input1+input2;
+    alert('*********************Booked Flight Successfully********************** '+
+    "Total sit is ( " +totalSit+" )"+
+    "   Subtotal is ( " +subTotal+" )"+
+    "   Vat is ( " +vat+" )"+
+    "   Total price is ( " +totalPrice+" )"+
+   "            ***  Wish you a safe journey  ***"
        
     );
 }
